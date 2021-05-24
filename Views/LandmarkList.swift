@@ -22,8 +22,6 @@ struct LandmarkList: View {
     }
 }
 
-// Git test
-
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE (2nd generation)","iPhone XS"], id: \.self) { deviceName in
