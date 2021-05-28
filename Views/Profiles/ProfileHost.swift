@@ -32,7 +32,7 @@ struct ProfileHost: View {
                     .onAppear {
                         draftProfile = modelData.profile
                     }
-                    .onAppear {
+                    .onDisappear {
                         modelData.profile = draftProfile
                     }
         

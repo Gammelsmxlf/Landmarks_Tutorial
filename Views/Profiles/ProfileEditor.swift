@@ -12,12 +12,11 @@ struct ProfileEditor: View {
     
     var dateRange: ClosedRange<Date> {
         let min = Calendar.current.date(byAdding: .year, value: -1, to: profile.goalDate)!
-                let max = Calendar.current.date(byAdding: .year, value: 1, to: profile.goalDate)!
-                return min...max
+        let max = Calendar.current.date(byAdding: .year, value: 1, to: profile.goalDate)!
+        return min...max
     }
     
     var body: some View {
-        
         List {
             HStack {
                 Text("Username").bold()
